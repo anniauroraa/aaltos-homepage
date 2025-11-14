@@ -1,12 +1,15 @@
 // src/App.jsx
-import './App.css';
+// import './App.css';
+// import './styles/global.css';
+import './styles/desktop.css';
+import './styles/mobile.css';
 
 function App() {
   return (
     <div>
       <section className="landing">
-        {/* <img src="/src/assets/bg-1-fullsize-cropped.jpg" alt="background image" className="landingImage"/> */}
-        <div className="mainLogo">
+        <img src="/src/assets/bg-1-fullsize-cropped.jpg" alt="background image" className="landingBackground"/>
+        <div className="desktopLogo">
           <img src="/src/assets/aaltos-logo.svg" alt="aaltos band" className="logo"/>
         </div>
         <div className="menuMain">
@@ -20,6 +23,10 @@ function App() {
 
       </section>
       <section className="about">
+        <img src="/src/assets/bg-2.png" className="secondBackground"/>
+        <div className="mobileLogo">
+          <img src="/src/assets/aaltos-logo.svg" alt="aaltos band" className="logo"/>
+        </div>
         <div className="about-content">
           <h2>Olemme aaltos</h2>
           <p>

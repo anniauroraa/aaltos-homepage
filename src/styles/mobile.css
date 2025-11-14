@@ -1,0 +1,68 @@
+/* Mobile styles - these override desktop.css */
+@media (max-width: 768px) {
+  .landing {
+    height: auto; /* Let content determine height */
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    border: red;
+  }
+
+  .landingBackground {
+    width: 100%;
+    height: auto; /* Let image scale naturally */
+    object-fit: contain; /* Show full image */
+    position: relative; /* Remove absolute positioning */
+    z-index: 0;
+    order: 1; /* Image first in flex order */
+    fill: green;
+  }
+
+  .desktopLogo {
+    display: none;
+  }
+
+  /* BUTTON MENU */
+
+  /* SECOND BACKGROUND */
+
+  .about {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mobileLogo {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+
+    width: clamp(240px, 24vw, 300px);
+  }
+
+  .about-content {
+    order: 2; /* Text comes after logo */
+    margin-top: 4rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Add logo to about section */
+  .about .mainLogo {
+    order: 1;
+    margin: 0 auto 2rem auto;
+  }
+
+}

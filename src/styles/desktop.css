@@ -1,0 +1,100 @@
+/* Desktop-specific styles */
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.landingBackground {
+  width: 100%;
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* This is the key - fills container while maintaining aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.desktopLogo {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+
+  width: clamp(320px, 24vw, 400px);
+}
+
+.menuMain, .menuIcons {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menuMain { top: 2rem; }
+.menuIcons { bottom: 2rem; }
+
+.menuMain span,
+.menuIcons .icon {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  transition: transform 0.2s ease;
+  display: inline-block;          /* ensures transform works nicely */
+}
+
+.menuMain span:hover,
+.menuIcons .icon:hover {
+  transform: scale(1.1); /* grows 10% on hover */
+  opacity: 1;            /* keep opacity unchanged */
+}
+
+
+/* SECOND BACKGROUND */
+
+.about {
+  position: relative;
+  min-height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.secondBackground {
+  width: 100%;
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* This is the key - fills container while maintaining aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.about-content {
+  position: relative;
+  text-align: center; 
+  max-width: 600px;   /* controls the width of the text block */
+  margin: 0 auto;     /* centers it horizontally */
+  padding: 2rem;
+  z-index: 1;
+  text-align: center; /* centers text inside */
+}
