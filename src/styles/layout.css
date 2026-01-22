@@ -1,0 +1,53 @@
+.headerContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* .headerMenu a {
+    font-size: 1.5rem;
+} */
+
+.headerIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.headerIcons img {
+    display: block;
+    width: auto;
+    height: 32px;
+}
+
+.headerLogo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.headerLogo img {
+    height: 142px;
+    width: auto;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-red);
+  cursor: pointer;
+}
+
+/* hide mobile menu in desktop view */
+.mobileMenu {
+    display: none;
+}

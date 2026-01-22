@@ -1,0 +1,42 @@
+@media (max-width: 768px) {    
+    .headerContainer {
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+    }
+
+    .headerMenu,
+    .headerIcons {
+        display: none;
+    }
+
+    .headerLogo img {
+        height: 104px;
+        width: auto;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobileMenu {
+        position: static;
+        top: 100%;
+        width: 100%;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+        /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+    }
+
+    .mobileMenu a {
+        margin: 0.25rem 0; 
+    }
+
+    .mobileIcons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+}

@@ -1,33 +1,69 @@
 // src/App.jsx
-// import './App.css';
-// import './styles/global.css';
-import './styles/desktop.css';
-import './styles/mobile.css';
+import './styles/globals.css';
+import './styles/layout.css';
+import './styles/components.css'
+import './styles/responsive.css';
+
+import { useState } from "react";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
-      <section className="landing">
-        <img src="/src/assets/bg-1-fullsize-cropped.jpg" alt="background image" className="landingBackground"/>
-        <div className="desktopLogo">
-          <img src="/src/assets/aaltos-logo.svg" alt="aaltos band" className="logo"/>
-        </div>
-        <div className="menuMain">
-            <span>Tilaa meidät</span>
-            <span>Bändijäsenet</span>
-        </div>
-        <div className="menuIcons">
-          <img src="/src/assets/instagram-logo-33x33.svg" alt="Instagram icon" className="icon"/>
-          <img src="/src/assets/email-logo-38x33.svg" alt="Email icon" className="icon"/>
+      <header className="headerContainer">
+        <nav className="headerMenu">
+          <a href="#contact">Tilaa meidät</a>
+          <a href="#members">Bändijäsenet</a>
+        </nav>
+
+        <div className="headerLogo">
+          <img 
+            src="/src/assets/aaltos-logo-red.svg" 
+            alt="aaltos band" 
+            className="logo"/>
         </div>
 
-      </section>
-      <section className="about">
-        <img src="/src/assets/bg-2.png" className="secondBackground"/>
-        <div className="mobileLogo">
-          <img src="/src/assets/aaltos-logo.svg" alt="aaltos band" className="logo"/>
+        <div className="headerIcons">
+          <a href="https://www.instagram.com/aaltosband/" aria-label="Instagram">
+            <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon"/>
+          </a>
+          <a href="mailto:aaltosband@gmail.com" aria-label="Email">
+            <img src="/src/assets/email-icon-red.svg" alt="Email icon"/>
+          </a>
         </div>
-        <div className="about-content">
+
+        {/* Only in mobile view */}
+        <button
+          className="hamburger"
+          aria-label="Open menu"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        {menuOpen && (
+          <div className="mobileMenu">
+            <a href="#contact">Tilaa meidät</a>
+            <a href="#members">Bändijäsenet</a>
+            <div className="mobileIcons">
+              <a href="https://www.instagram.com/aaltosband/">
+                <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon" className="icon"/>
+              </a>
+              <a href="mailto:aaltosband@gmail.com">
+                <img src="/src/assets/email-icon-red.svg" alt="Email icon" className="icon"/>
+              </a>
+            </div>
+          </div>
+        )}
+      </header>
+
+      <section className="imageContainer">
+        <img src="/src/assets/bg-1-fullsize-cropped.jpg" alt="background image" className="landingBackground"/>
+      </section>
+
+      <section className="contentContainer">
+        <div id="contact" className="contact">
           <h2>Olemme aaltos</h2>
           <p>
             Entisistä ja nykyisistä tekniikanopiskelijoista koottu bilebändi aaltos 
@@ -38,6 +74,9 @@ function App() {
             Bändi on tilattavissa rahalla aivan mihin vain tilaisuuteen, ja yhteyden 
             heihin saa instagramin tai sähköpostin kautta.
             </p>
+        </div>
+        <div id="members" className="members">
+          <h2>Bändijäsenet</h2>
         </div>
       </section>
     </div>
