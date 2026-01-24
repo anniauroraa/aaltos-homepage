@@ -39,8 +39,12 @@
         height: 24px;
     }
 
+    .carouselContainer .carousel {
+        aspect-ratio: 16 / 10;
+    }
+
     .contact,
     .members {
         padding: 0rem 1rem;
-}
+    }
 }

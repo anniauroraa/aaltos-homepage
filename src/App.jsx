@@ -1,7 +1,8 @@
 // src/App.jsx
 import './styles/globals.css';
 import './styles/layout.css';
-import './styles/responsive.css';
+import "./styles/carousel.css";
+import './styles/mediaQueries.css';
 
 import { Carousel } from "./components/carousel.jsx";
 import { slides } from "./data/carouselData.json";
