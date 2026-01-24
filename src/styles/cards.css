@@ -24,11 +24,12 @@
 .memberName {
   margin-top: 0.75rem;
   margin-bottom: 0rem;
-  font-weight: 600;
+  /* font-weight: 500; */
 }
 
 .memberInstrument {
   margin: 0;
+  /* font-weight: 500; */
 }
 
 

@@ -69,5 +69,5 @@
 }
 
 .indicator-inactive {
-  background-color: grey;
+  background-color: var(--color-grey);
 }

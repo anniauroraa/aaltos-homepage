@@ -35,13 +35,27 @@
 .headerMenu a {
     display: inline-flex; /* or flex */
     align-items: center;
-    font-size: 1rem;
 }
 
 .headerIcons img {
     display: block;
     width: auto;
     height: 30px;
+}
+
+.headerMenu a,
+.headerIcons img {
+    transition: opacity 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.headerMenu a:hover {
+    transform: scale(1.05); /* grows 10% on hover */
+    opacity: 1;
+}
+.headerIcons img:hover {
+    transform: scale(1.1); /* grows 10% on hover */
+    opacity: 1;
 }
 
 .headerLogo {
