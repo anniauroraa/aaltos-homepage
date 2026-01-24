@@ -1,20 +1,21 @@
 // src/App.jsx
 import './styles/globals.css';
 import './styles/layout.css';
-import './styles/components.css'
 import './styles/responsive.css';
 
+import { Carousel } from "./components/carousel.jsx";
+import { slides } from "./data/carouselData.json";
 import { useState } from "react";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
+    <section className="pageContainer">
       <header className="headerContainer">
         <nav className="headerMenu">
-          <a href="#contact">Tilaa meidät</a>
-          <a href="#members">Bändijäsenet</a>
+          <a href="#tilaa">Tilaa meidät</a>
+          <a href="#jasenet">Bändijäsenet</a>
         </nav>
 
         <div className="headerLogo">
@@ -58,28 +59,33 @@ function App() {
         )}
       </header>
 
-      <section className="imageContainer">
-        <img src="/src/assets/bg-1-fullsize-cropped.jpg" alt="background image" className="landingBackground"/>
-      </section>
+      <div className="carouselContainer">
+        <Carousel data={slides}/>
+      </div>
 
-      <section className="contentContainer">
-        <div id="contact" className="contact">
-          <h2>Olemme aaltos</h2>
-          <p>
-            Entisistä ja nykyisistä tekniikanopiskelijoista koottu bilebändi aaltos 
-            soittaa kiinnostavaa musiikkia persoonallisella otteella. aaltos on niin 
-            cool että sen nimi kirjoitetaan pienellä alkukirjaimella. Bändiläiset ovat 
-            tuttuja konkareita useista opiskelijabändeistä, ja toistaiseksi bändi soittaa 
-            vain cover-musiikkia, mutta saa nähdä mitä tulevaisuus tuo tullessaan! 
-            Bändi on tilattavissa rahalla aivan mihin vain tilaisuuteen, ja yhteyden 
-            heihin saa instagramin tai sähköpostin kautta.
-            </p>
-        </div>
-        <div id="members" className="members">
-          <h2>Bändijäsenet</h2>
-        </div>
-      </section>
-    </div>
+      <div id="tilaa" className="contact">
+        <h3>Tilaa meidät juhliisi soittamaan!</h3>
+        <p>
+          Kaipaavatko juhlasi livemusiikkia? Olipa kyseessä häät, synttärit, 
+          jatkot tai valmistujaiset, aaltos on oiva bilebändi juhlaan kuin juhlaan. 
+          Tämä tamperelainen bilebändi soittaa kiinnostavaa musiikkia persoonallisella 
+          otteella. Ohjelmistomme tarjoaa musiikkia kaikkien rakastamista hittibiiseistä 
+          ja tanssimusiikista aina jazzahtavampaan suomi-indieen ja konepoppiin. Räätälöimme 
+          setin aina tilaisuuteesi sopivaksi ja otamme vastaan 1-5 toivebiisiä!
+        </p>
+        <p>
+          Esitystekniikka (ääni + valot) meidän tai teidän, hinta riippuu. Sijaitsemme 
+          Tampereella, mutta matkakuluista voimme sopia erikseen.
+        </p>
+        <p>
+          Ole matalalla kynnyksellä yhteydessä niin päästään yhdessä suunnittelemaan 
+          loistokeikka tapahtumaasi!
+        </p>
+      </div>
+      <div id="jasenet" className="members">
+        <h3>Bändijäsenet</h3>
+      </div>
+    </section>
   );
 }
 

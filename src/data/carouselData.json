@@ -1,0 +1,12 @@
+{
+  "slides": [
+    {
+      "src": "/images/konttori.png",
+      "alt": "Image 1 for carousel"
+    },
+    {
+      "src": "/images/kaf.jpg",
+      "alt": "Image 2 for carousel"
+    }
+  ]
+}
