@@ -4,13 +4,11 @@ import './styles/layout.css';
 import "./styles/carousel.css";
 import './styles/mediaQueries.css';
 
+import Hamburger from "./components/Hamburger";
 import { Carousel } from "./components/carousel.jsx";
 import { slides } from "./data/carouselData.json";
-import { useState } from "react";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <section className="pageContainer">
       <header className="headerContainer">
@@ -36,28 +34,7 @@ function App() {
         </div>
 
         {/* Only in mobile view */}
-        <button
-          className="hamburger"
-          aria-label="Open menu"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
-
-        {menuOpen && (
-          <div className="mobileMenu">
-            <a href="#contact">Tilaa meidät</a>
-            <a href="#members">Bändijäsenet</a>
-            <div className="mobileIcons">
-              <a href="https://www.instagram.com/aaltosband/">
-                <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon" className="icon"/>
-              </a>
-              <a href="mailto:aaltosband@gmail.com">
-                <img src="/src/assets/email-icon-red.svg" alt="Email icon" className="icon"/>
-              </a>
-            </div>
-          </div>
-        )}
+        <Hamburger/>
       </header>
 
       <div className="carouselContainer">
