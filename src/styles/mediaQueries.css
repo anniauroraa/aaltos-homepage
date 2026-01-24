@@ -50,6 +50,10 @@
         padding: 0rem 1rem;     /* add horizontal padding */
     }
 
+    .membersGrid {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+
     .bandName {
         text-align: left;
     }
