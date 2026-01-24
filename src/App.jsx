@@ -4,8 +4,8 @@ import './styles/layout.css';
 import "./styles/carousel.css";
 import './styles/mediaQueries.css';
 
-import Hamburger from "./components/Hamburger";
-import { Carousel } from "./components/carousel.jsx";
+import { Hamburger } from "./components/Hamburger.jsx";
+import { Carousel } from "./components/Carousel.jsx";
 import { slides } from "./data/carouselData.json";
 
 function App() {

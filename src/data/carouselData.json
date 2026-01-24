@@ -1,12 +1,16 @@
 {
   "slides": [
     {
-      "src": "/images/konttori.png",
-      "alt": "Image 1 for carousel"
+      "src": "/images/aaltos-siinasiuvo.png",
+      "alt": "Image 1"
     },
     {
-      "src": "/images/kaf.jpg",
-      "alt": "Image 2 for carousel"
+      "src": "/images/aaltos-anttihakkarainen.png",
+      "alt": "Image 2"
+    },
+    {
+      "src": "/images/aaltos-sanniperttula.png",
+      "alt": "Image 3"
     }
   ]
 }
