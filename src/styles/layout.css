@@ -16,6 +16,15 @@
     padding: 0.5rem 0rem;
 }
 
+.bottomRow1,
+.bottomRow2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* margin: 0; */
+}
+
 .headerMenu,
 .headerIcons {
     display: flex;
@@ -69,7 +78,9 @@
 }
 
 .contact,
-.members {
-    margin-top: 4rem;
+.members,
+.siteFooter
+ {
+    margin-top: 6rem;
     /* padding: 3rem; */
 }

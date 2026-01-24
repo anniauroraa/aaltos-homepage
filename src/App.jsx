@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import "./styles/layout.css";
 import "./styles/carousel.css";
 import "./styles/cards.css";
+import "./styles/footer.css"
 import "./styles/mediaQueries.css";
 
 import { Hamburger } from "./components/Hamburger.jsx";
@@ -65,17 +66,37 @@ function App() {
       </div>
       <div id="jasenet" className="members">
         <h3>Bändijäsenet</h3>
-
         <div className="membersGrid">
-        {membersData.members.map((member, index) => (
-          <div className="memberCard" key={index}>
-            <img src={member.src} alt={member.alt} />
-            <h4 className="memberName">{member.name}</h4>
-            <h4 className="memberInstrument">{member.instrument}</h4>
+          {membersData.members.map((member, index) => (
+            <div className="memberCard" key={index}>
+              <img src={member.src} alt={member.alt} />
+              <h4 className="memberName">{member.name}</h4>
+              <h4 className="memberInstrument">{member.instrument}</h4>
+            </div>
+          ))}
+        </div>
+      </div>
+      <footer className="siteFooter">
+        <h5 className="bandName">aaltos</h5>
+        <div className="footerContent">
+          <div className="footerBandInfo">
+            <p className="contactEmail">
+              aaltos (at) gmail.com
+            </p>
+            <p className="instagram">
+              aaltosband
+            </p>
           </div>
-        ))}
-      </div>
-      </div>
+          <div className="footerCredits">
+            <p>
+              Sivut: Anni Virtanen
+            </p>
+            <p>
+              Kuvat: Siina Siuvo, Antti Hakkarainen, Sanni Perttula
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
   );
 }

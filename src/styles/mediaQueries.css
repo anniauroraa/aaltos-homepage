@@ -49,4 +49,17 @@
     .members {
         padding: 0rem 1rem;     /* add horizontal padding */
     }
+
+    .bandName {
+        text-align: left;
+    }
+    .footerContent {
+        flex-direction: column;
+        text-align: left;
+        /* align-items: center; */
+    }
+
+    .footerCredits {
+        text-align: left;
+    }
 }

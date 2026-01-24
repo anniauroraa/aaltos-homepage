@@ -1,0 +1,47 @@
+.siteFooter {
+  font-size: 0.9rem;
+  padding-bottom: 4rem;
+}
+
+.bandName {
+    font-weight: 900;
+    margin-bottom: 0rem;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin-inline: auto;
+  flex-wrap: wrap; /* allows wrapping on mobile */
+  gap: 1rem;
+}
+
+.footerBandInfo p,
+.footerCredits p {
+  margin: 0.25rem 0;
+}
+
+.footerBandInfo a,
+.footerCredits a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.footerCredits {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  /* .footerContent {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footerCredits {
+    text-align: center;
+  } */
+}
