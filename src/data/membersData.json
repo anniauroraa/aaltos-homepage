@@ -1,0 +1,34 @@
+{
+    "members": [
+        {
+            "name": "Milla Tyyskä",
+            "instrument": "Koskettimet, saksofoni, laulu",
+            "src": "/images/milla.png",
+            "alt": "a"
+        },
+        {
+            "name": "Monika Eklund",
+            "instrument": "Laulu",
+            "src": "/images/monika.png",
+            "alt": "b"
+        },
+        {
+            "name": "Anni Virtanen",
+            "instrument": "Basso",
+            "src": "/images/anni.png",
+            "alt": "c"
+        },
+        {
+            "name": "Juho Viitala",
+            "instrument": "Rummut",
+            "src": "/images/juho.png",
+            "alt": "d"
+        },
+        {
+            "name": "Matti Ala-Poikela",
+            "instrument": "Kitara",
+            "src": "/images/matti.png",
+            "alt": "e"
+        }
+    ]
+}

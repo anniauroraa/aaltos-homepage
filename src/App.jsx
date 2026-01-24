@@ -1,12 +1,15 @@
 // src/App.jsx
-import './styles/globals.css';
-import './styles/layout.css';
+import "./styles/globals.css";
+import "./styles/layout.css";
 import "./styles/carousel.css";
-import './styles/mediaQueries.css';
+import "./styles/cards.css";
+import "./styles/mediaQueries.css";
 
 import { Hamburger } from "./components/Hamburger.jsx";
 import { Carousel } from "./components/Carousel.jsx";
+
 import { slides } from "./data/carouselData.json";
+import membersData from "./data/membersData.json";
 
 function App() {
   return (
@@ -62,6 +65,16 @@ function App() {
       </div>
       <div id="jasenet" className="members">
         <h3>Bändijäsenet</h3>
+
+        <div className="membersGrid">
+        {membersData.members.map((member, index) => (
+          <div className="memberCard" key={index}>
+            <img src={member.src} alt={member.alt} />
+            <h4 className="memberName">{member.name}</h4>
+            <h4 className="memberInstrument">{member.instrument}</h4>
+          </div>
+        ))}
+      </div>
       </div>
     </section>
   );

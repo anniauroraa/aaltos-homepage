@@ -1,0 +1,34 @@
+.membersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 210px));
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  justify-content: center;
+}
+
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.memberCard img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.memberName {
+  margin-top: 0.75rem;
+  margin-bottom: 0rem;
+  font-weight: 600;
+}
+
+.memberInstrument {
+  margin: 0;
+}
+
+
