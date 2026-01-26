@@ -1,9 +1,20 @@
 .siteFooter {
-  padding-bottom: 4rem;
+  padding: 4rem 0rem;   /* only vertical padding */
+  position: relative;
 }
 
-.bandName {
-    margin-bottom: 0rem;
+/* allow background color to reach full-screen-width */
+.siteFooter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-red);
+
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: -1;
 }
 
 .footerContent {
@@ -11,35 +22,21 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1000px;
   margin-inline: auto;
   flex-wrap: wrap; /* allows wrapping on mobile */
   gap: 1rem;
 }
 
+.bandName {
+  color: white;
+}
+
 .footerBandInfo p,
 .footerCredits p {
   margin: 0.1rem 0;
-}
-
-.footerBandInfo a,
-.footerCredits a {
-  color: var(--color-white);
-  text-decoration: underline;
+  color: white;
 }
 
 .footerCredits {
   text-align: right;
-}
-
-@media (max-width: 768px) {
-  /* .footerContent {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footerCredits {
-    text-align: center;
-  } */
 }
