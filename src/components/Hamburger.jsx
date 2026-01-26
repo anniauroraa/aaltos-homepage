@@ -15,8 +15,8 @@ export function Hamburger() {
 
             {menuOpen && (
                 <div className="mobileMenu">
-                    <a href="#contact">Tilaa meidät</a>
-                    <a href="#members">Bändijäsenet</a>
+                    <a href="#tilaa">Tilaa meidät</a>
+                    <a href="#jasenet">Bändijäsenet</a>
                     <div className="mobileIcons">
                         <a href="https://www.instagram.com/aaltosband/">
                             <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon" className="icon"/>

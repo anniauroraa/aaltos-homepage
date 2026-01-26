@@ -47,7 +47,7 @@
 
     .contact,
     .members {
-        padding: 0rem 1rem;     /* add horizontal padding */
+        margin-top: 4rem;
     }
 
     .membersGrid {
