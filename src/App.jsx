@@ -1,9 +1,12 @@
 // src/App.jsx
 import "./styles/globals.css";
 import "./styles/layout.css";
+import "./styles/contactLink.css"
+
 import "./styles/carousel.css";
 import "./styles/cards.css";
 import "./styles/footer.css"
+
 import "./styles/mediaQueries.css";
 
 import { Hamburger } from "./components/Hamburger.jsx";
@@ -11,6 +14,7 @@ import { Carousel } from "./components/Carousel.jsx";
 
 import { slides } from "./data/carouselData.json";
 import membersData from "./data/membersData.json";
+import { ContactLink } from "./components/ContactLink.jsx";
 
 function App() {
   return (
@@ -29,12 +33,16 @@ function App() {
         </div>
 
         <div className="headerIcons">
-          <a href="https://www.instagram.com/aaltosband/" aria-label="Instagram">
-            <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon"/>
-          </a>
-          <a href="mailto:aaltosband@gmail.com" aria-label="Email">
-            <img src="/src/assets/email-icon-red.svg" alt="Email icon"/>
-          </a>
+          <ContactLink 
+            type={"email"}
+            color="red"
+            iconHeight={24}
+          />
+          <ContactLink 
+            type={"instagram"}
+            color="red"
+            iconHeight={24}
+          />
         </div>
 
         {/* Only in mobile view */}
@@ -46,7 +54,7 @@ function App() {
       </div>
 
       <div id="tilaa" className="contact">
-        <h3>Tilaa meidät juhliisi soittamaan!</h3>
+        <h2>Tilaa meidät juhliisi soittamaan!</h2>
         <p>
           Kaipaavatko juhlasi livemusiikkia? Olivatpa kyseessä häät, synttärit, jatkot tai valmistujaiset, aaltos on oiva bändi juhlaan kuin juhlaan. Tämä tamperelainen kokeneista soittajista koostuva bilebändi soittaa kiinnostavaa musiikkia persoonallisella otteella. Ohjelmistomme tarjoaa musiikkia kaikkien rakastamista hittibiiseistä ja tanssimusiikista aina Suomi-indieen ja sovituksiin yllättävistäkin musagenreistä. Räätälöimme setin aina tilaisuuteen sopivaksi toiveesi huomioiden.
         </p>
@@ -57,19 +65,27 @@ function App() {
           Toimimme pääasiassa Tampereen seudulla, mutta keikkailu onnistuu kauempanakin. Matkakuluja laskutamme tilanteen mukaan. Ole yhteydessä, niin päästään yhdessä suunnittelemaan loistokeikka tapahtumaasi!
         </p>
         <div className="bandInfo">
-          <h4>
+          <h3>
             Yhteystiedot
-          </h4>
-          <p className="contactEmail">
+          </h3>
+          <ContactLink 
+            type={"email"}
+            color="red"
+            iconWidth={18}
+          >
             Email: aaltos (at) gmail.com
-          </p>
-          <p className="instagram">
+          </ContactLink>
+          <ContactLink 
+            type={"instagram"}
+            color="red"
+            iconWidth={18}
+          >
             Instagram: aaltosband
-          </p>
+          </ContactLink>          
         </div>
       </div>
       <div id="jasenet" className="members">
-        <h3>Bändijäsenet</h3>
+        <h2>Bändijäsenet</h2>
         <div className="membersGrid">
           {membersData.members.map((member, index) => (
             <div className="memberCard" key={index}>
@@ -84,12 +100,20 @@ function App() {
         <h5 className="bandName">aaltos</h5>
         <div className="footerContent">
           <div className="footerBandInfo">
-            <p className="contactEmail">
-              aaltos (at) gmail.com
-            </p>
-            <p className="instagram">
-              aaltosband
-            </p>
+            <ContactLink 
+              type={"email"}
+              color="white"
+              iconWidth={18}
+            >
+              Email: aaltos (at) gmail.com
+            </ContactLink>
+            <ContactLink 
+              type={"instagram"}
+              color="white"
+              iconWidth={18}
+            >
+              Instagram: aaltosband
+            </ContactLink>   
           </div>
           <div className="footerCredits">
             <p>

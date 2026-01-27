@@ -30,15 +30,16 @@
         margin: 0.25rem 0; /* vertical spacing of menu items */
     }
 
+    /* icons align horizontally */
     .mobileIcons {
         display: flex;
         gap: 1rem;
-        margin-top: 0.5rem;
+        margin: 0.5rem;
     }
 
-    .mobileIcons img {
+    /* .mobileIcons img {
         height: 20px;
-    }
+    } */
 
     /* Change carousel aspect ratio */
     .carouselContainer .carousel {

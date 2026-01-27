@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { ContactLink } from "./ContactLink.jsx"
+
 export function Hamburger() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -18,12 +20,20 @@ export function Hamburger() {
                     <a href="#tilaa">Tilaa meidät</a>
                     <a href="#jasenet">Bändijäsenet</a>
                     <div className="mobileIcons">
-                        <a href="https://www.instagram.com/aaltosband/">
-                            <img src="/src/assets/instagram-icon-red.svg" alt="Instagram icon" className="icon"/>
-                        </a>
-                        <a href="mailto:aaltosband@gmail.com">
-                            <img src="/src/assets/email-icon-red.svg" alt="Email icon" className="icon"/>
-                        </a>
+                        <ContactLink
+                            href="https://www.instagram.com/aaltosband/"
+                            icon="/src/assets/instagram-icon-red.svg"
+                            aria-label="Instagram"
+                            alt="Instagram icon"
+                            size="small"
+                        />
+                        <ContactLink
+                            href="mailto:aaltosband@gmail.com"
+                            icon="/src/assets/email-icon-red.svg"
+                            aria-label="Email"
+                            alt="Email icon"
+                            size="small"
+                        />
                     </div>
                 </div>
             )}

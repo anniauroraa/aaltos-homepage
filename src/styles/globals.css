@@ -27,13 +27,12 @@ body {
 
 /* menu links */
 a {
-  font-family: var(--font-heading);
+  /* font-family: var(--font-heading); */
   color: var(--color-red);
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1rem;
-
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
+  /* font-size: 1rem; */
 }
 
 a:hover {
@@ -68,17 +67,17 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* headers */
 h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 /* names and insturments in cards */
 h4 {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
