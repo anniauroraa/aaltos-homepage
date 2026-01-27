@@ -5,22 +5,12 @@
   text-decoration: none;
 }
 
-/* .contactText {
-  font-size: 0.9rem;
-} */
+.contactText {
+  margin: 0.2rem;
+}
 
 .contactLink img {
     display: block;
-}
-
-.contactLink.small img {
-    height: 18px;
-    width: auto;
-}
-
-.contactLink.large img {
-    height: 24px;
-    width: auto;
 }
 
 .contactLink.red {

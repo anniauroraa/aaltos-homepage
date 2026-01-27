@@ -20,19 +20,15 @@ export function Hamburger() {
                     <a href="#tilaa">Tilaa meidät</a>
                     <a href="#jasenet">Bändijäsenet</a>
                     <div className="mobileIcons">
-                        <ContactLink
-                            href="https://www.instagram.com/aaltosband/"
-                            icon="/src/assets/instagram-icon-red.svg"
-                            aria-label="Instagram"
-                            alt="Instagram icon"
-                            size="small"
+                        <ContactLink 
+                            type={"email"}
+                            color="red"
+                            iconHeight={18}
                         />
-                        <ContactLink
-                            href="mailto:aaltosband@gmail.com"
-                            icon="/src/assets/email-icon-red.svg"
-                            aria-label="Email"
-                            alt="Email icon"
-                            size="small"
+                        <ContactLink 
+                            type={"instagram"}
+                            color="red"
+                            iconHeight={18}
                         />
                     </div>
                 </div>

@@ -64,7 +64,7 @@ function App() {
         <p>
           Toimimme pääasiassa Tampereen seudulla, mutta keikkailu onnistuu kauempanakin. Matkakuluja laskutamme tilanteen mukaan. Ole yhteydessä, niin päästään yhdessä suunnittelemaan loistokeikka tapahtumaasi!
         </p>
-        <div className="bandInfo">
+        <div className="mainContactLinks">
           <h3>
             Yhteystiedot
           </h3>
