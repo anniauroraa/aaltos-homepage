@@ -26,13 +26,11 @@
 .headerMenu a {
     display: inline-flex; /* or flex */
     align-items: center;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
-
-/* .headerIcons img {
-    display: block;
-    width: auto;
-    height: 24px;
-} */
 
 .headerMenu a,
 .headerIcons img {

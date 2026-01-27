@@ -23,12 +23,12 @@ export function Hamburger() {
                         <ContactLink 
                             type={"email"}
                             color="red"
-                            iconHeight={18}
+                            iconHeight={24}
                         />
                         <ContactLink 
                             type={"instagram"}
                             color="red"
-                            iconHeight={18}
+                            iconHeight={24}
                         />
                     </div>
                 </div>
