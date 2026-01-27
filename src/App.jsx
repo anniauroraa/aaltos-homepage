@@ -48,20 +48,13 @@ function App() {
       <div id="tilaa" className="contact">
         <h3>Tilaa meidät juhliisi soittamaan!</h3>
         <p>
-          Kaipaavatko juhlasi livemusiikkia? Olipa kyseessä häät, synttärit, 
-          jatkot tai valmistujaiset, aaltos on oiva bilebändi juhlaan kuin juhlaan. 
-          Tämä tamperelainen bilebändi soittaa kiinnostavaa musiikkia persoonallisella 
-          otteella. Ohjelmistomme tarjoaa musiikkia kaikkien rakastamista hittibiiseistä 
-          ja tanssimusiikista aina jazzahtavampaan suomi-indieen ja konepoppiin. Räätälöimme 
-          setin aina tilaisuuteesi sopivaksi ja otamme vastaan 1-5 toivebiisiä!
+          Kaipaavatko juhlasi livemusiikkia? Olivatpa kyseessä häät, synttärit, jatkot tai valmistujaiset, aaltos on oiva bändi juhlaan kuin juhlaan. Tämä tamperelainen kokeneista soittajista koostuva bilebändi soittaa kiinnostavaa musiikkia persoonallisella otteella. Ohjelmistomme tarjoaa musiikkia kaikkien rakastamista hittibiiseistä ja tanssimusiikista aina Suomi-indieen ja sovituksiin yllättävistäkin musagenreistä. Räätälöimme setin aina tilaisuuteesi sopivaksi laajasta ohjelmistostamme, ja otamme lisäksi vastaan 1-5 toivebiisiä!
         </p>
         <p>
-          Esitystekniikka (ääni + valot) meidän tai teidän, hinta riippuu. Sijaitsemme 
-          Tampereella, mutta matkakuluista voimme sopia erikseen.
+          Esitystekniikka (ääni + valot) voidaan tilata tapahtumaan myös meidän kauttamme. Sijaitsemme Tampereella, mutta matkustaminen on myös sovittavissa.
         </p>
         <p>
-          Ole matalalla kynnyksellä yhteydessä niin päästään yhdessä suunnittelemaan 
-          loistokeikka tapahtumaasi!
+          Ole yhteydessä, niin päästään yhdessä suunnittelemaan loistokeikka tapahtumaasi!
         </p>
       </div>
       <div id="jasenet" className="members">
