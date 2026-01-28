@@ -56,7 +56,7 @@ function App() {
       </div>
 
       <div id="tilaa" className="contact">
-        <h2>Tilaa meidät juhliisi soittamaan!</h2>
+        <h1>Tilaa meidät juhliisi soittamaan!</h1>
         <p>
           Kaipaavatko juhlasi livemusiikkia? Olivatpa kyseessä häät, synttärit, jatkot tai valmistujaiset, aaltos on oiva bändi juhlaan kuin juhlaan. Tämä tamperelainen kokeneista soittajista koostuva bilebändi soittaa kiinnostavaa musiikkia persoonallisella otteella. Ohjelmistomme tarjoaa musiikkia kaikkien rakastamista hittibiiseistä ja tanssimusiikista aina Suomi-indieen ja sovituksiin yllättävistäkin musagenreistä. Räätälöimme setin aina tilaisuuteen sopivaksi toiveesi huomioiden.
         </p>
@@ -67,15 +67,15 @@ function App() {
           Toimimme pääasiassa Tampereen seudulla, mutta keikkailu onnistuu kauempanakin. Matkakuluja laskutamme tilanteen mukaan. Ole yhteydessä, niin päästään yhdessä suunnittelemaan loistokeikka tapahtumaasi!
         </p>
         <div className="mainContactLinks">
-          <h3>
+          <h2>
             Yhteystiedot
-          </h3>
+          </h2>
           <ContactLink 
             type={"email"}
             color="red"
             iconWidth={18}
           >
-            Email: aaltos@gmail.com
+            Email: aaltosband@gmail.com
           </ContactLink>
           <ContactLink 
             type={"instagram"}
@@ -87,12 +87,12 @@ function App() {
         </div>
       </div>
       <div id="jasenet" className="members">
-        <h2>Bändijäsenet</h2>
+        <h1>Bändijäsenet</h1>
         <div className="membersGrid">
           {membersData.members.map((member, index) => (
             <div className="memberCard" key={index}>
               <img src={member.src} alt={member.alt} />
-              <h4 className="memberName">{member.name}</h4>
+              <h3 className="memberName">{member.name}</h3>
               <h4 className="memberInstrument">{member.instrument}</h4>
             </div>
           ))}
@@ -107,7 +107,7 @@ function App() {
               color="white"
               iconWidth={18}
             >
-              Email: aaltos@gmail.com
+              Email: aaltosband@gmail.com
             </ContactLink>
             <ContactLink 
               type={"instagram"}

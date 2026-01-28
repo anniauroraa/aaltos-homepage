@@ -46,7 +46,10 @@
         aspect-ratio: 16 / 10;
     }
 
-    .contact,
+    .contact {
+        margin-top: 3rem;
+    }
+
     .members {
         margin-top: 4rem;
     }
@@ -66,5 +69,9 @@
 
     .footerCredits {
         text-align: left;
+    }
+
+    .siteFooter {
+        padding: 3rem 0rem;   /* only vertical padding */
     }
 }

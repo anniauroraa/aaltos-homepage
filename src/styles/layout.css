@@ -80,7 +80,10 @@
     padding-inline: 0;
 }
 
-.contact,
+.contact {
+    margin-top: 4rem;
+}
+
 .members,
 .siteFooter
  {

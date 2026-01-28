@@ -55,26 +55,29 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+/* header */
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-/* headers */
-h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-h3 {
+/* sub-header */
+h2 {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-/* names and insturments in cards */
+/* names in cards */
+h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* insturments in cards */
 h4 {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
+  opacity: 75%;
 }
 
 @media (max-width: 768px) {
