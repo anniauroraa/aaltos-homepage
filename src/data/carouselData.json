@@ -2,15 +2,15 @@
   "slides": [
     {
       "src": "/images/aaltos-siinasiuvo.png",
-      "alt": "Image 1"
+      "alt": "Promokuva bändistä istumassa yhdessä pöydän ääressä iloisina lämpimässä valaistuksessa. Kuvan ottanut Siina Siuvo."
     },
     {
       "src": "/images/aaltos-anttihakkarainen.png",
-      "alt": "Image 2"
+      "alt": "Aaltos bändi KAF-keikan loppukumarruksessa. Kuvan ottanut Antti Hakkarainen."
     },
     {
       "src": "/images/aaltos-sanniperttula.png",
-      "alt": "Image 3"
+      "alt": "Pitkällä valotuksella otettu punasävyinen kuva aaltos bändistä Trey 7v. vujukeikalla. Kuvan ottanut Sanni Perttula."
     }
   ]
 }

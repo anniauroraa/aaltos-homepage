@@ -1,11 +1,16 @@
+import instagramRed from "/src/assets/instagram-icon-red.svg"
+import instagramWhite from "/src/assets/instagram-icon-white.svg"
+import emailRed from "/src/assets/email-icon-red.svg"
+import emailWhite from "/src/assets/email-icon-white.svg"
+
 const contacts = {
   instagram: {
     href: "https://www.instagram.com/aaltosband/",
     ariaLabel: "Instagram",
     alt: "Instagram icon",
     icons: {
-      red: "/src/assets/instagram-icon-red.svg",
-      white: "/src/assets/instagram-icon-white.svg",
+      red: instagramRed,
+      white: instagramWhite,
     },
   },
   email: {
@@ -13,8 +18,8 @@ const contacts = {
     ariaLabel: "Email",
     alt: "Email icon",
     icons: {
-      red: "/src/assets/email-icon-red.svg",
-      white: "/src/assets/email-icon-white.svg",
+      red: emailRed,
+      white: emailWhite,
     },
   },
 };

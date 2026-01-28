@@ -16,6 +16,8 @@ import { slides } from "./data/carouselData.json";
 import membersData from "./data/membersData.json";
 import { ContactLink } from "./components/ContactLink.jsx";
 
+import logoPng from "/src/assets/aaltos-logo-red.svg"
+
 function App() {
   return (
     <section className="pageContainer">
@@ -27,8 +29,8 @@ function App() {
 
         <div className="headerLogo">
           <img 
-            src="/src/assets/aaltos-logo-red.svg" 
-            alt="aaltos band" 
+            src={logoPng} 
+            alt="aaltos band logo where 'aaltos' is in cursive." 
             className="logo"/>
         </div>
 
