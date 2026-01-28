@@ -3,6 +3,8 @@ import instagramWhite from "/src/assets/instagram-icon-white.svg";
 import emailRed from "/src/assets/email-icon-red.svg";
 import emailWhite from "/src/assets/email-icon-white.svg";
 
+const emailParts = ["aaltosband", "gmail.com"];
+
 const contacts = {
   instagram: {
     href: "https://www.instagram.com/aaltosband/",
@@ -14,7 +16,7 @@ const contacts = {
     },
   },
   email: {
-    href: "mailto:aaltosband@gmail.com",
+    href: `mailto:${emailParts.join("@")}`,
     ariaLabel: "Email",
     alt: "Email icon",
     icons: {
