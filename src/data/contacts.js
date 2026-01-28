@@ -1,7 +1,7 @@
-import instagramRed from "/src/assets/instagram-icon-red.svg"
-import instagramWhite from "/src/assets/instagram-icon-white.svg"
-import emailRed from "/src/assets/email-icon-red.svg"
-import emailWhite from "/src/assets/email-icon-white.svg"
+import instagramRed from "/src/assets/instagram-icon-red.svg";
+import instagramWhite from "/src/assets/instagram-icon-white.svg";
+import emailRed from "/src/assets/email-icon-red.svg";
+import emailWhite from "/src/assets/email-icon-white.svg";
 
 const contacts = {
   instagram: {

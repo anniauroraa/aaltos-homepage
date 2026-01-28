@@ -16,7 +16,7 @@ import { slides } from "./data/carouselData.json";
 import membersData from "./data/membersData.json";
 import { ContactLink } from "./components/ContactLink.jsx";
 
-import logoPng from "/src/assets/aaltos-logo-red.svg"
+import logoPng from "/src/assets/aaltos-logo-red.svg";
 
 function App() {
   return (
@@ -75,7 +75,7 @@ function App() {
             color="red"
             iconWidth={18}
           >
-            Email: aaltos (at) gmail.com
+            Email: aaltos@gmail.com
           </ContactLink>
           <ContactLink 
             type={"instagram"}
@@ -107,7 +107,7 @@ function App() {
               color="white"
               iconWidth={18}
             >
-              Email: aaltos (at) gmail.com
+              Email: aaltos@gmail.com
             </ContactLink>
             <ContactLink 
               type={"instagram"}

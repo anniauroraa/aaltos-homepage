@@ -4,31 +4,31 @@
             "name": "Milla Tyyskä",
             "instrument": "Koskettimet, saksofoni, laulu",
             "src": "/images/milla.png",
-            "alt": "a"
+            "alt": "Milla laulamassa ja soittamassa koskettimia."
         },
         {
             "name": "Monika Eklund",
             "instrument": "Laulu",
             "src": "/images/monika.png",
-            "alt": "b"
+            "alt": "Monika laualmassa."
         },
         {
             "name": "Anni Virtanen",
             "instrument": "Basso",
             "src": "/images/anni.png",
-            "alt": "c"
+            "alt": "Anni soittamassa bassoa."
         },
         {
             "name": "Juho Viitala",
             "instrument": "Rummut",
             "src": "/images/juho.png",
-            "alt": "d"
+            "alt": "Juho soittamassa rumpuja."
         },
         {
             "name": "Matti Ala-Poikela",
             "instrument": "Kitara",
             "src": "/images/matti.png",
-            "alt": "e"
+            "alt": "Matti soittamassa kitaraa."
         }
     ]
 }
