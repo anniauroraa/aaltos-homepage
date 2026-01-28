@@ -93,7 +93,7 @@ function App() {
             <div className="memberCard" key={index}>
               <img src={member.src} alt={member.alt} />
               <h3 className="memberName">{member.name}</h3>
-              <h4 className="memberInstrument">{member.instrument}</h4>
+              <h3 className="memberInstrument">{member.instrument}</h3>
             </div>
           ))}
         </div>

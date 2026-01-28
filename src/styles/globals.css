@@ -67,17 +67,10 @@ h2 {
   font-weight: 500;
 }
 
-/* names in cards */
+/* names and instruments in cards */
 h3 {
   font-size: 0.9rem;
   font-weight: 500;
-}
-
-/* insturments in cards */
-h4 {
-  font-size: 0.9rem;
-  font-weight: 500;
-  opacity: 75%;
 }
 
 @media (max-width: 768px) {
