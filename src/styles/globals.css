@@ -70,13 +70,13 @@ h2 {
 /* names in cards */
 h3 {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* insturments in cards */
 h4 {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   opacity: 75%;
 }
 
