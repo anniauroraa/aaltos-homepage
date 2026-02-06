@@ -1,6 +1,6 @@
 ## Homepage for the band aaltos
 
-This project is about building a static website for a band called aaltos. Go check the website: [https://aaltosband.fi](https:aaltosband.fi)
+This project is about building a static website for a band called aaltos. Go check the website: [https://aaltosband.fi](https://aaltosband.fi)
 
 ### Project uses  
 * Javascript
